@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+
+public class atv2{
+    
+    public static void main(String args[]) {
+        double num1 = Double.parseDouble(JOptionPane.showInputDialog("forneça a largura"));
+        double num2 = Double.parseDouble(JOptionPane.showInputDialog("forneça o comprimento"));
+       
+
+        double result = num1 * num2 ;
+        double preco = result * 45.00;
+                JOptionPane.showMessageDialog(null,"\nValores inseridos foram: " +num1 + ", " +num2 + "  "  
+                        +"\nA piscina solicitada tem: " +result +"metros cubicos" 
+                        +"\nO valor da construção será de: R$" +preco);
+                        System.exit(0);
+        }
+}
